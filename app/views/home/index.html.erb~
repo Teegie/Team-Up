@@ -3,7 +3,6 @@
 	<head>
 		<title>TeamUp</title>
 		<meta http-esquiv="Content-Type" content="text/html; charset=UTF-8"/>
-		<link rel="stylesheet" type="text/css" href="css.css">
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
 	</head>
@@ -33,7 +32,7 @@
 		<section>
 			<h1>TeamUp</h1>
 			<div id = "Content">
-				test
+			  <%= yield %>
 			</div>
 		</section>
 		<footer>
