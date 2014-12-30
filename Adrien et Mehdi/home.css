@@ -26,9 +26,7 @@ header {
        min-width: 750px;
        width: 100%;
        height: 40px;
-       background-image: url("Menu.png");
-       background-repeat: repeat-x;
-       background-size: 2px 100%;
+       background: linear-gradient(rgb(39,108,226) , rgb(255,255,255));
        font-size: 10px;
 }
 
@@ -52,8 +50,11 @@ header form input, header form a{
        min-width: 50px;
        text-decoration: none;
        color: #000;
-       cursor: pointer;
        font-family: arial;
+}
+
+header form input[type="submit"]{
+  cursor: pointer;
 }
 
 header form label{
@@ -86,10 +87,7 @@ header form label{
 
 #main-menu>li>ul {
 		 margin-top: -17px;
-		 background-image: url("Nav.png");
-		 background-repeat: repeat-x;
-		 background-size: 2px 100%;
-
+		 background: linear-gradient(rgb(255,255,255), rgb(250,216,20));
 }
 
 #main-menu ul li {
@@ -124,8 +122,9 @@ header form label{
 	   max-height: 40px;
 }
 
-#main-menu  li:hover {
+#main-menu li ul a:hover {
 	    text-decoration: underline;
+      color: #888;
 }
 
 /**/
