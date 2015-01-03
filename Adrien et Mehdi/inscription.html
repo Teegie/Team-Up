@@ -1,0 +1,51 @@
+﻿<header>
+	<link rel="stylesheet" href="home.css"/>
+</header>
+<body>
+	<div id="inscription">
+		<h3>Vous êtes sur la fiche d'inscription</h3>
+		<form id = "inscription">
+			<legend>Votre identité</legend>
+			<ul>
+				<li>
+				<label for=nom>Nom</label>
+        		<input id=nom name=nom type=text placeholder="Nom" required autofocus>
+      			</li>
+      			<li>
+      				<label for=prenom>Prénom</label>
+        			<input id=prenom name=prenom type=text placeholder="Prénom" required autofocus>
+      			</li>
+      			<li>
+      				<label for=sexe>Sexe</label>
+        			<input type="radio" name="sexe1" value="1">Masculin
+        			<input type="radio" name="sexe2" value="2">Feminin
+      			</li>
+      			<li>
+      				<label for=age>Age</label>
+        			<input id=age name=age type=text placeholder="Age" required autofocus>
+      			</li>
+      			<li>
+      				<label for=noment>Nom de l'entreprise</label>
+        			<input id=noment name=noment type=text placeholder="Nom de l'entreprise" required autofocus>
+      			</li>
+      			<li>
+      				<label for=login>Login</label>
+        			<input id=login name=login type=text placeholder="Login" required autofocus>
+      			</li>
+      			<li>
+      				<label for=mdp>Mot de passe</label>
+        			<input id=mdp name=mdp type=password placeholder="Mot de passe" required autofocus>
+      			</li>
+      			<li>
+      				<label for=email>Email</label>
+        			<input id=email name=email type=text placeholder="Email" required autofocus>
+      			</li>
+      			<li>
+      				<label for=tel>Téléphone</label>
+        			<input id=tel name=tel type=text placeholder="Téléphone" required autofocus>
+      			</li>
+			</ul>	
+			<button type="button" onclick="alert('information envoyées')">Valider</button>
+		</form>
+	</div>
+</body>
