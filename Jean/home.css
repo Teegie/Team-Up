@@ -28,6 +28,7 @@ header {
        height: 40px;
        background: linear-gradient(#444, #777);
        font-size: 10px;
+       z-index: 1;
 }
 
 header form {
@@ -200,6 +201,53 @@ header form p a{
   position: relative;
   top: 5%;
   text-align: center;
+}
+
+section #download
+{
+  position: relative;
+  width: 200px;
+  top: 50px;
+  margin: auto;
+}
+
+section #download ul
+{
+      display: inline-block;
+      list-style-type: disc;
+      padding: 0;
+      line-height: 200px;
+      /*-webkit-margin-before: 1em;
+      -webkit-margin-after: 1em;
+      -webkit-margin-start: 0px;
+      -webkit-margin-end: 0px;
+      -webkit-padding-start: 40px;*/
+}
+
+section li
+{
+       height: 90px;
+       border: 1px dotted #0E28EC;
+       font-size: 15px;
+       font-family: Trebuchet MS;
+       color: #0E28EC;
+       text-align: left;
+       padding-left: 95px;
+       padding-right: 25px;
+       line-height: 80px;
+       list-style: none;
+       cursor: pointer;
+}
+
+section #logo_download
+{
+       background: url('download.png') left no-repeat #0E28EC;
+}
+
+section a
+{
+       color: #fff;
+       text-decoration: none;
 }
 
 /**/
