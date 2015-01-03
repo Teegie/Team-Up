@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'home#index'
   get '/google' => redirect('http://google.com')
-
+  get '/test' => redirect('home#test')
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
