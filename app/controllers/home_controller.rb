@@ -3,6 +3,6 @@ class HomeController < ApplicationController
   def index
   end
   def show
-
+  	redirect('home/show.html.erb')
   end
 end
