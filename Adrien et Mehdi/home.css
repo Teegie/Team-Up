@@ -233,19 +233,19 @@ footer li {
 }
 
 footer #facebook {
-       background: url('facebook.png') left no-repeat #F0652A;
+       background: url('facebook.png') left no-repeat #FFB814;
 }
 
 footer #co-labs {
-       background: url('colabs2.png') left no-repeat #F0652A;
+       background: url('colabs2.png') left no-repeat #FFB814;
 }
 
 footer #twitter {
-       background: url('twitter.png') left no-repeat #F0652A;
+       background: url('twitter.png') left no-repeat #FFB814;
 }
 
 footer #mail {
-       background: url('contact.png') left no-repeat #F0652A;
+       background: url('contact.png') left no-repeat #FFB814;
 }
 
 footer #twitter:hover {
