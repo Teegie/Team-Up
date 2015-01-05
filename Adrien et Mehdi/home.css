@@ -28,7 +28,7 @@ section #Content{
   background-color: #345;
 }
 
-#Content #inscription{
+#Content #button{
   display: inline-block;
   width: 45%;
   margin: 10px;
@@ -36,12 +36,12 @@ section #Content{
   background-color: #345;
 }
 
-#inscription ul{
+#button ul{
   margin: 0;
   padding: 0;
 }
 
-#inscription ul li{
+#button ul li{
   background-color: #123;
   display: block;
   height: 50px;
@@ -50,7 +50,7 @@ section #Content{
   border-radius: 10px;  
 }
 
-#inscription ul li a{
+#button ul li a{
   display: block;
   padding-left: 10px; 
   text-decoration: none;
