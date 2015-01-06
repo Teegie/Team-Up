@@ -236,7 +236,7 @@ header form p a{
       text-decoration: underline;
 }
 
-form#inscription {
+form #inscription {
   margin-left: 30%;
    background: #0099CC;
   -moz-border-radius: 5px;
@@ -247,15 +247,15 @@ form#inscription {
   color: white;
 }
 
-form#inscription fieldset {
+form #inscription fieldset {
   border: none;
   margin-bottom: 10px;
 }
-form#inscription fieldset:last-of-type {
+form #inscription fieldset:last-of-type {
   margin-bottom: 0;
 }
 
-form#inscription legend {
+form #inscription legend {
   color: #384313;
   font-size: 16px;
   font-weight: bold;
@@ -263,7 +263,7 @@ form#inscription legend {
   text-shadow: 0 1px 1px #c0d576;
 }
 
-form#inscription ul li {
+form #inscription ul li {
   background: #b9cf6a;
   background: rgba(255,255,255,.3);
   border-color: #e3ebc3;
@@ -278,19 +278,20 @@ form#inscription ul li {
   padding: 5px 10px;
   margin-bottom: 2px;
 }
-form#inscription ul ul li {
+form #inscription ul ul li {
   background: none;
   border: none;
   float: left;
 }
 
-form#inscription label {
+form #inscription label {
   float: left;
   font-size: 11px;
   width: 100px;
 }
 
 /**/
+
 #titre_scenario
 {
   text-align: center;
@@ -311,28 +312,22 @@ form#inscription label {
   text-align: center;
 }
 
-section #download
+#download
 {
-  position: relative;
+  
   width: 200px;
+  height: 90px;
   top: 50px;
   margin: auto;
+  background-color: #0E28EC;
 }
 
-section #download ul
-{
-      display: inline-block;
-      list-style-type: disc;
-      padding: 0;
-      line-height: 200px;
-      /*-webkit-margin-before: 1em;
-      -webkit-margin-after: 1em;
-      -webkit-margin-start: 0px;
-      -webkit-margin-end: 0px;
-      -webkit-padding-start: 40px;*/
+#download img {
+  
+  float: right;
 }
 
-section li
+#download li
 {
        height: 90px;
        border: 1px dotted #0E28EC;
@@ -347,15 +342,13 @@ section li
        cursor: pointer;
 }
 
-section #logo_download
+#download a
 {
-       background-color: #0E28EC;
-}
+      position: relative;
+      color: #fff;
+      top: 30px;
+      left: 15px;
 
-section a
-{
-       color: #fff;
-       text-decoration: none;
 }
 
 /**/
@@ -363,9 +356,9 @@ section a
 #players
 {
   position: absolute;
-  margin-left: 60%;
-  bottom: 50%;
-  height: 20%;
+  margin-left: 63%;
+  bottom: 33%;
+  height: auto;
   width: 15%;
   background-color: black;
   color: white;
@@ -405,7 +398,17 @@ footer #contact {
        width: 250px;
 }
 
+footer #condi {
+    position: relative;
+    top: 150px;
+    left: 300px;
+    color: white;
+    font-family: Arial;
+    color: white;
+}
+
 footer #reseaux_sociaux {
+
        float: left;
        width: 250px;
        margin-left: 25px;
