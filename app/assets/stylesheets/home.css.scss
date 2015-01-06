@@ -1,8 +1,8 @@
 body {
      margin: auto;
      min-width: 1024px;
-     max-width: 1600px;
-     background-color: #808080;
+     max-width: 1024px;
+     background-color: #4173D8; /*<- couleur fond */
      font-family: arial;
      /*background-image: url("favicon.ico");*/
 }
@@ -14,9 +14,57 @@ section h1{
 
 section #Content{
   width: 100%;
-  height: 1000px;
+  min-height: 400px;
   margin-top: 10px;
   background-color: white;
+}
+
+.profile {
+  position: relative;
+  left: 10%;
+}
+
+.ziggy{
+  position: relative;
+  left: 10%;
+  top: 20%;
+}
+#Content #text{
+  display: block;
+  width: 70%;
+  margin: auto;
+  padding: 10px;
+}
+
+#Content #button{
+  display: block;
+  width: 70%;
+  margin: auto;
+  padding: 10px;
+}
+
+#button ul{
+  margin: auto;
+  padding: 0;
+  width: 300px;
+}
+
+#button ul li{
+  background-color: #09c;
+  display: block;
+  height: 50px;
+  width: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align:center
+}
+
+#button ul li a{
+  display: block;
+  padding-left: 10px; 
+  text-decoration: none;
+  line-height: 50px;
+  color: #fff;
 }
 
 #image {
@@ -34,6 +82,7 @@ header {
        height: 40px;
        background: linear-gradient(#444, #777);
        font-size: 10px;
+       z-index: 2;
 }
 
 header form {
@@ -187,12 +236,156 @@ header form p a{
       text-decoration: underline;
 }
 
+form#inscription {
+  margin-left: 30%;
+   background: #0099CC;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 20px;
+  width: 400px;
+  color: white;
+}
+
+form#inscription fieldset {
+  border: none;
+  margin-bottom: 10px;
+}
+form#inscription fieldset:last-of-type {
+  margin-bottom: 0;
+}
+
+form#inscription legend {
+  color: #384313;
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  text-shadow: 0 1px 1px #c0d576;
+}
+
+form#inscription ul li {
+  background: #b9cf6a;
+  background: rgba(255,255,255,.3);
+  border-color: #e3ebc3;
+  border-color: rgba(255,255,255,.6);
+  border-style: solid;
+  border-width: 2px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  line-height: 30px;
+  list-style: none;
+  padding: 5px 10px;
+  margin-bottom: 2px;
+}
+form#inscription ul ul li {
+  background: none;
+  border: none;
+  float: left;
+}
+
+form#inscription label {
+  float: left;
+  font-size: 11px;
+  width: 100px;
+}
+
+/**/
+#titre_scenario
+{
+  text-align: center;
+}
+
+#taille_img
+{
+  position: relative;
+  height: 20%;
+  width: 40%;
+  left: 30%;
+}
+
+#Scenario
+{
+  position: relative;
+  top: 5%;
+  text-align: center;
+}
+
+section #download
+{
+  position: relative;
+  width: 200px;
+  top: 50px;
+  margin: auto;
+}
+
+section #download ul
+{
+      display: inline-block;
+      list-style-type: disc;
+      padding: 0;
+      line-height: 200px;
+      /*-webkit-margin-before: 1em;
+      -webkit-margin-after: 1em;
+      -webkit-margin-start: 0px;
+      -webkit-margin-end: 0px;
+      -webkit-padding-start: 40px;*/
+}
+
+section li
+{
+       height: 90px;
+       border: 1px dotted #0E28EC;
+       font-size: 15px;
+       font-family: Trebuchet MS;
+       color: #0E28EC;
+       text-align: left;
+       padding-left: 95px;
+       padding-right: 25px;
+       line-height: 80px;
+       list-style: none;
+       cursor: pointer;
+}
+
+section #logo_download
+{
+       background-color: #0E28EC;
+}
+
+section a
+{
+       color: #fff;
+       text-decoration: none;
+}
+
 /**/
 
-footer {
-       width: 100%;
+#players
+{
+  position: absolute;
+  margin-left: 60%;
+  bottom: 50%;
+  height: 20%;
+  width: 15%;
+  background-color: black;
+  color: white;
+  font-family: Arial;
+  text-align: center;
+}
+
+#name_players
+{
+  position: relative;
+  top: 10%;
+  text-align: left;
+  left: 10%;
+}
+/**/
+footer {  
+      
+       width: 1024px;
        height: 200px;
-       background-color: #222;
+       background: linear-gradient(#fff 10px, #444); /*<- dégradé footer*/
 }
 
 footer #reseaux_sociaux ul, footer #contact ul{
@@ -233,19 +426,19 @@ footer li {
 }
 
 footer #facebook {
-       background: url('facebook.png') left no-repeat #F0652A;
+       background: url('facebook.png') left no-repeat #FFB814;
 }
 
 footer #co-labs {
-       background: url('colabs2.png') left no-repeat #F0652A;
+       background: url('colabs2.png') left no-repeat #FFB814;
 }
 
 footer #twitter {
-       background: url('twitter.png') left no-repeat #F0652A;
+       background: url('twitter.png') left no-repeat #FFB814;
 }
 
 footer #mail {
-       background: url('contact.png') left no-repeat #F0652A;
+       background: url('contact.png') left no-repeat #FFB814;
 }
 
 footer #twitter:hover {
