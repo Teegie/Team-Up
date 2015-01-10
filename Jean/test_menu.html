@@ -1,133 +1,127 @@
 <style type="text/css">
-*{
-     margin: 0;
-     padding: 0;
-     border: none;
-}
+     * {
+          margin: 0;
+          padding: 0;
+          border: none;
+     }
 
-/* header */
+     /* header */
+     header {
+          height: 40px;
+          width: 100%;
+          position: fixed;
+          background: linear-gradient(#444, #666);
+          border: 1px solid;
+          overflow: hidden;
+     }
+     header ul#menu {
+          position: absolute;
+          width: 100%
+          left:0;
+          top: 0;
+     }
+     header ul#menu>li>a {
+          display: block;
+          position: absolute;
+     }
+     header ul#menu>li {
+          position: relative;
+          float: left;
+          overflow: hidden;
+          width: 40px;
+          height: 40px;
+          margin-right: 3px;
+          list-style: none;
+          transition: width 1s ease 0.15s;
+          background: linear-gradient(#444, #666);
+     }
+     header ul#menu>li:hover {
+          width: 700px;
+     }
 
-header{
-     height: 40px;
-     width: 100%;
-     position: fixed;
-     background: linear-gradient(#444 , #666);
-     border: 1px solid;
-     overflow: hidden;
-}
-header ul#menu{
-     position: absolute;
-     width: 100%
-     left: 0;
-     top: 0;
-}
-header ul#menu>li>a{
-     display: block;
-     position: absolute;
-}
-header ul#menu>li{
-     position: relative;
-     float: left;
-     overflow: hidden;
-     width: 40px;
-     height: 40px;
-     margin-right: 3px;
-     list-style: none;
-     transition:width 1s ease 0.15s;
+     /* header nav */
+     header nav {
+          height: 40px;
+          width: 700px;
+          margin-left: 40px;
+     }
+     header nav ul {
+          padding: 0;
+          margin-left: 40px;
+     }
+     header nav ul li {
+          display: inline-block;
+          width: 100px;
+          height: 40px;
+          margin-right: 20px;
+          line-height: 40px;
+          background-color: #999;
+          text-align: center;
+     }
+     header nav ul li a {
+          text-decoration: none;
+          color: #000;
+     }
+     header nav ul li a:hover {
+          border-bottom: solid 1px #888;
+          color: #888;
+     }
 
-     background: linear-gradient(#444 , #666);
-}
-header ul#menu>li:hover{
-     width:700px;    
-}
-
-/* header nav */
-
-header nav{
-     height: 40px;
-     width: 700px;
-     margin-left: 40px;
-}
-header nav ul{
-     padding: 0;
-     margin-left: 40px;
-}
-header nav ul li{
-     display: inline-block;
-     width: 100px;
-     height: 40px;
-     margin-right: 20px;
-     line-height: 40px;
-     background-color: #999;
-     text-align: center;
-}
-header nav ul li a{
-     text-decoration: none;
-     color: #000;
-}
-header nav ul li a:hover{
-     border-bottom: solid 1px #888;
-     color: #888;
-}
-
-/* header form */
-
-header form{
-     height: 40px;
-     width: 750px;
-     font-size: 14px;
-     font-family: arial;
-     float: right;
-}
-header form p{
-     display: inline-block;
-     height: 30px;
-     margin-top: 5px;
-     margin-left: 10px;
-}
-header form p label{
-     display: inline-block;
-     border-radius: 5px 0 0 5px;
-     background-color: #09c;
-     height: 30px;
-     padding: 0 10px;
-     line-height: 30px;
-     color: #fff;
-}
-header form p input[type="text"], header form p input[type="password"]{
-     display: inline-block;
-     border-radius: 0 5px 5px 0;
-     background-color: #000;
-     height: 100%;
-     color: #cec;
-}
-header form p input[type="submit"]{
-     display: inline-block;
-     border-radius: 5px;
-     background-color: #000;
-     color: #cec;
-     height: 100%;
-     cursor: pointer;
-     padding: 0 5px;
-     width: 100px;
-}
-header form p a{
-     display: inline-block;
-     border-radius: 5px;
-     background-color: #000;
-     color: #cec;
-     height: 100%;
-     cursor: pointer;
-     padding: 0 5px;
-     text-decoration: none;
-     line-height: 30px;
-     width: 100px;
-}
-
-section{
-     height: 1000px;
-}
-
+     /* header form */
+     header form {
+          height: 40px;
+          width: 750px;
+          font-size: 14px;
+          font-family: arial;
+          float: right;
+     }
+     header form p {
+          display: inline-block;
+          height: 30px;
+          margin-top: 5px;
+          margin-left: 10px;
+     }
+     header form p label {
+          display: inline-block;
+          border-radius: 5px 0 0 5px;
+          background-color: #09c;
+          height: 30px;
+          padding: 0 10px;
+          line-height: 30px;
+          color: #fff;
+     }
+     header form p input[type="text"], header form p input[type="password"] {
+          display: inline-block;
+          border-radius: 0 5px 5px 0;
+          background-color: #000;
+          height: 100%;
+          color: #cec;
+     }
+     header form p input[type="submit"] {
+          display: inline-block;
+          border-radius: 5px;
+          background-color: #000;
+          color: #cec;
+          height: 100%;
+          cursor: pointer;
+          padding: 0 5px;
+          width: 100px;
+     }
+     header form p a {
+          display: inline-block;
+          border-radius: 5px;
+          background-color: #000;
+          color: #cec;
+          height: 100%;
+          cursor: pointer;
+          padding: 0 5px;
+          text-decoration: none;
+          line-height: 30px;
+          width: 100px;
+     }
+     section {
+          height: 1000px;
+     }
 </style>
 <body>
      <header>
